@@ -43,7 +43,7 @@ Now, open the project directory in your code editor and continue to the next sec
 - [ ] Open your `index.html` file
 
 - [ ] Add the phrase "About"
-- [ ] Below that, write a paragraph about yourself
+- [ ] Below that, write a paragraph about yourselfgit
 - [ ] Add the phrase "Experience"
 - [ ] Below that, write a list of places you've worked or projects you've worked on
 - [ ] Add the phrase "Connect"
