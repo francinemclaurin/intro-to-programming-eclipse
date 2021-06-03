@@ -6,7 +6,7 @@ let footer = document.querySelector('footer');
 
 const copyright = document.createElement('p');
 
-copyright.innerHTML = `Francine D. McLaurin &copy; ${thisYear}`
+copyright.innerHTML = `&copy; ${thisYear} Francine D. McLaurin`
 
 footer.appendChild(copyright)
 
