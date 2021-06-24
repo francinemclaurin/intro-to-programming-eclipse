@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: white;
+    color: darkblue;
+}
+.box {
+    overflow-y: scroll;
+}
+header {
+   min-height: 25vh; 
+   background-color: rgb(0, 234, 255);
+   padding: 10px 15px;
+   border: 12px solid darkblue; 
+   margin: 30px auto 15px;
+}
+section {
+    min-height: auto;
+    border-bottom: 2px dotted darkblue;
+
+}
+img {
+    height: 200px;
+    width: 300px;
+   
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+   
+}
+ul {
+    list-style: none;
+    display: inline-block;
+}
+#coding_experience {
+    display: inline-block;
+}
+/* ul li {
+    display: inline-block; */
+}
+p {
+    font-size: 20px;
+} 
+section, form, footer {
+    padding: 5px;
+    margin: auto;
+}
