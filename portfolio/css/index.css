@@ -6,6 +6,7 @@ body {
     text-align: center;
     background-color: white;
     color: darkblue;
+    font-size:20px;
 }
 .box {
     overflow-y: scroll;
@@ -40,11 +41,11 @@ ul {
     display: inline-block;
 }
 /* ul li {
-    display: inline-block; */
-}
-p {
+    display: inline-block; 
+}*/
+/* p {
     font-size: 20px;
-} 
+}  */
 section, form, footer {
     padding: 5px;
     margin: auto;
