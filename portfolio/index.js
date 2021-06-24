@@ -12,7 +12,7 @@ footer.appendChild(copyright)
 
 const skills = [
     'Project Management',
-    'Use of electronic medical record system to     record patient data',
+    'Use of electronic medical record system to  record patient data',
     'Effective Communicator',
     'Collaboration',
     'Critical Thinking and Problem Solving'
@@ -40,7 +40,7 @@ messageForm.addEventListener('submit', (event) => {
     const messageSection = document.querySelector('#messages');
     const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
-        newMessage.innerHTML = '<a href="mailto:' + email + '">'+ name + '</a> <span>' + message + '</span>';
+        newMessage.innerHTML = '<a href="mailto:' + email + '">'+ name + '</a> <span>'+ `wrote: ` + message + '</span>&nbsp';
 
     const removeButton = document.createElement('button');
     removeButton.innerText = 'Remove';

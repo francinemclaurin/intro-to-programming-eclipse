@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Francine D. McLaurin's Portfolio</title>
+<html lang="en"> 
+<head>
     <meta charset="utf-8" />
     <style>
-      body {
-        background-color: white;
-      }
-      h1 {
-        color: black;
-      }
-      p {
-        color: blue;
-      }
-    </style>
-  </head>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+      </style>
+    <title>Francine D. McLaurin's Portfolio</title>
+    <link rel='stylesheet' href='./css/index.css'> 
+
+</head>
   <body>
-    <h1>Francine D. McLaurin's Portfolio</h1>
+    <div class='box'>
+    <header>
+      <img src='./image/health_veins.jpg' alt='health picture' class='health'>
+      <h1>Francine D. McLaurin's Portfolio</h1>
+    </header> 
 
     <section>
       <h2>About</h2>
@@ -41,7 +39,7 @@
     <section>
       <h2>Experience</h2>
 
-      <p>Currently enrolled in Code The Dream (CTD) program where I am gaining real experience in building apps. CTD offers intense training in software development, programming basics to advanced web and mobile app design.</p>
+      <p id='coding_experience'>Currently enrolled in Code The Dream (CTD) program where I am gaining real experience in building apps. CTD offers intense training in software development, programming basics to advanced web and mobile app design.</p>
     </section>
 
     <section id='skills'>
@@ -68,8 +66,8 @@
           <input type='text' name='user_name' id='name' required='true'> 
           <br>
           <br>
-          <label for='email'>Email</label>
-          <br>
+          <label for='email'>Email Address</label>
+          
           <br>
           <input type='email' name='user_email' id='email' required='true'>
           <br>
@@ -78,7 +76,9 @@
           <label for='message'>Message</label>
           <br>
           <textarea name='message' required='true'></textarea>
-          <br />
+          <br>
+          <br/>
+
 
           <button type='submit'>Submit</button>
           
@@ -94,6 +94,7 @@
 
     </section>
     <footer></footer>
-    <script src='js/index.js'></script>
+    <script src='./index.js'></script>
+  </div> 
   </body>
 </html>
