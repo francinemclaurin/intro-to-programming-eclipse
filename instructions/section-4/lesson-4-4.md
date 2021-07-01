@@ -64,7 +64,7 @@ For this assignment, there are some general requirements but the design is up to
   - Add spacing (padding/margin) between form fields
   - Change padding, background color, border, etc. of submit button
 - [ ] Transform the "Messages" list items into styled blocks and customize the button(s)
-- [ ] Change the spacing and background color of the footer
+- [x ] Change the spacing and background color of the footer
 - [ ] Use Media Queries to make sure the webpage is responsive for all device sizes (mobile, tablet, desktop, etc.)
 
 This is the basic rubric, but we encourage you to think beyond this list and come up with your own ideas to make your webpage unique!

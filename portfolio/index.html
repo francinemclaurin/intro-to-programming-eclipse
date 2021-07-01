@@ -1,100 +1,116 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <meta charset="utf-8" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-      </style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+    </style>
     <title>Francine D. McLaurin's Portfolio</title>
-    <link rel='stylesheet' href='./css/index.css'> 
-
-</head>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script></script>
+  </head>
   <body>
-    <div class='box'>
-    <header>
-      <img src='./image/health_veins.jpg' alt='health picture' class='health'>
-      <h1>Francine D. McLaurin's Portfolio</h1>
-    </header> 
-
-    <section>
-      <h2>About</h2>
-      <p>
-        Dedicated retired Registered Nurse with 37.5 years of experience that
-        has included:
-      </p>
-      <ul>
-        <li>Medical-Surgical Nursing</li>
-        <li>USAF Flight-Nurse on fixed wing aircraft</li>
-        <li>Operating Room Circulating Nurse</li>
-        <li>Home Health Nursing</li>
-        <li>Emergency Department Nursing.</li>
-      </ul>
-      <p>
-        Currently volunteering in my faith community as a resource person for
-        Health and Wellness. Currently seeking means of sharing digital
-        information in the community for preventive medicine advocacy.
-      </p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-
-      <p id='coding_experience'>Currently enrolled in Code The Dream (CTD) program where I am gaining real experience in building apps. CTD offers intense training in software development, programming basics to advanced web and mobile app design.</p>
-    </section>
-
-    <section id='skills'>
-      <h2>Skills</h2>
-        <ul></ul>
-    </section>
-
-    <section>
-      <h2>Connect</h2>
-      <p> 
-      <a href="https://www.facebook.com/francine.mclaurin/" target="_blank"
-        >facebook</a></p> 
-      <p><a href="mailto:francine_0906@yahoo.com">email me</a></p>
-      <p><a href="https://github.com/francinemclaurin">My github</a></p>
-    </section>
-
-    <section>
-      <h2>Leave a Message</h2>
-
-        <form name='leave_message'>
-
-          <label for='name'>Name</label>
-          <br>
-          <input type='text' name='user_name' id='name' required='true'> 
-          <br>
-          <br>
-          <label for='email'>Email Address</label>
+    <div class="box">
+      <header class="health sticky">
+        <img
+          src="./image/health_veins.jpg"
+          alt="health picture"
+          class="health"
+        />
+        <div class="menu-container">
           
-          <br>
-          <input type='email' name='user_email' id='email' required='true'>
-          <br>
-          <br>
+        <nav>
+          <ul class="main-nav">
+            <li class='link'><a href="#about">About</a></li>
+            <li class='link'><a href="#experience">Experience</a></li>
+            <li class='link'><a href="#skills">Skills</a></li>
+            <li class='link'><a href="#connect">Connect</a></li>
+            <li class='link'><a href="#tomessage">Leave Message</a></li>
+          </ul>
+        </nav>
+          <h1 class="name">Francine D. McLaurin's Portfolio</h1>
+        </div>
+      </header>
 
-          <label for='message'>Message</label>
-          <br>
-          <textarea name='message' required='true'></textarea>
-          <br>
-          <br/>
-
-
-          <button type='submit'>Submit</button>
-          
-        </form>
-    </section>
-
-    <section id='messages'>
-      <h2>Messages</h2>
-        <ul>       
-
+      <section>
+        <h2 id='about'>About</h2>
+        <p>
+          Dedicated retired Registered Nurse with 37.5 years of experience that
+          has included:
+        </p>
+        <ul>
+          <li>Medical-Surgical Nursing</li>
+          <li>USAF Flight-Nurse on fixed wing aircraft</li>
+          <li>Operating Room Circulating Nurse</li>
+          <li>Home Health Nursing</li>
+          <li>Emergency Department Nursing.</li>
         </ul>
+        <p>
+          Currently volunteering in my faith community as a resource person for
+          Health and Wellness. Seeking means of sharing digital
+          information in the community for preventive medicine advocacy.
+        </p>
+      </section>
 
+      <section>
+        <h2 id='experience'>Experience</h2>
 
-    </section>
-    <footer></footer>
-    <script src='./index.js'></script>
-  </div> 
+        <p id="coding_experience">
+          Currently enrolled in Code The Dream (CTD) program where I am gaining
+          real experience in building apps.</p> 
+          <p>CTD offers intense training in
+          software development, programming basics to advanced web and mobile
+          app design.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul></ul>
+      </section>
+
+      <section>
+        <h2 id='connect'>Connect</h2>
+        <p>
+          <a href="https://www.facebook.com/francine.mclaurin/" target="_blank"
+            >facebook</a
+          >
+        </p>
+        <p><a href="mailto:francine_0906@yahoo.com">email me</a></p>
+        <p><a href="https://github.com/francinemclaurin">My github</a></p>
+      </section>
+
+      <section>
+        <h2 id='tomessage'>Leave a Message</h2>
+
+        <form class="form-inline" name="leave_message">
+          <label  for="name">Name</label>
+          
+          <input type="text" name="user_name" id="name" required="true" />
+          
+          <label for="email">Email Address</label>
+
+          
+          <input type="email" name="user_email" id="email" required="true" />
+          
+
+          <label  for="message">Message</label>
+          
+         <div class="pad-right"> <textarea name="message" required="true"></textarea></div>
+         
+         
+          
+          <button   type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+      </section>
+      <footer></footer>
+      <script src="./index.js"></script>
+    </div>
   </body>
 </html>
