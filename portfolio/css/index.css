@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,15 +10,45 @@ body {
     color: darkblue;
     font-size:20px;
 }
-.box {
+/* .box {
     overflow-y: scroll;
+} */
+
+.health {
+    display: flex;
+
+} 
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: flex-end;
+    flex-basis: 200px;
+    /* box-sizing: border-box;
+    padding: 20px;
+    background-color: none; */
 }
+
+.health {
+    margin-right: auto;
+    
+}
+.main-nav ul a:hover {
+	color: #093a58;
+    /* background-color: white; */
+    justify-content: space-around;
+}
+.link {
+    padding: 8px;
+}
+
 header {
    min-height: 25vh; 
    background-color: rgb(0, 234, 255);
    padding: 10px 15px;
-   border: 12px solid darkblue; 
-   margin: 30px auto 15px;
+   border: 5px solid darkblue; 
+   margin: 10px auto 15px;
+   /* position: sticky; */
 }
 section {
     min-height: auto;
@@ -35,18 +67,74 @@ h1 {
 }
 ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    
+
 }
 #coding_experience {
-    display: inline-block;
+    display: inline;
 }
-/* ul li {
-    display: inline-block; 
-}*/
-/* p {
-    font-size: 20px;
-}  */
-section, form, footer {
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer {
+    background-color: rgb(118, 95, 160);
+}
+
+/* section, form, footer {
     padding: 5px;
-    margin: auto;
+    margin: auto; 
+} */
+
+.pad-right{
+    padding-right: 20px;
+}
+
+.form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-color: blue;
+    border-width: 1px;
+  }
+
+  textarea {
+    border-color: blue;
+    width: 200px;
+    font-size: 14px;
+  }
+  
+  .form-inline button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+
+/*Media Queries*/
+/* @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+      text-align: center; */
+    }
 }
