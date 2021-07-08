@@ -55,6 +55,35 @@ messageForm.addEventListener('submit', (event) => {
    
 });
 
+const githubRequest = new XMLHttpRequest();
+const GITHUB_USERNAME =  'francinemclaurin'
+
+githubRequest.open('GET', `https://api.github.com/users/${GITHUB_USERNAME}/repos`)
+
+githubRequest.send();
+
+// Handle Response from Server
+
+githubRequest.addEventListener('load', function () {
+    let repositories = JSON.parse(this.response);
+
+    console.log(repositories);
+
+    // get projects section
+    const projectSection = document.getElementById('projects');
+
+    // get ul list inside of section
+    const projectList = projectSection.querySelector('ul');
+
+    // for loop to loop over repositories. another way to do for loop.
+    repositories.forEach(repo => {
+        const project = document.createElement('li')
+        project.innerText = repo.name
+        projectList.appendChild(project)
+    })
+})
+
+
 
 
 
