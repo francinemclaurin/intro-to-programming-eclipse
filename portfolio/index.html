@@ -7,32 +7,40 @@
       @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
     </style>
     <title>Francine D. McLaurin's Portfolio</title>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Specifies relative path to CSS file -->
     <link rel="stylesheet" href="./css/index.css" />
     <script></script>
   </head>
   <body>
+    <a name="top"></a>
+    <nav>
     <div class="box" >
       <header class="health">
+        <div>
         <img
           src="./image/health_veins.jpg"
           alt="health picture"
-          class="health headerImage"
-        />
-        <div class="menu-container">
-          
-        <nav>
-          <ul class="main-nav">
+          class="health headerImage" />
+      </div>
+        <!-- <div class="menu-container"> -->
+          <div>
+            <h1 class="name">Francine D. McLaurin's Portfolio</h1>
+          </div>    
+      <div>   
+        <ul class="main-nav">
             <li class='link'><a href="#about">About</a></li>
             <li class='link'><a href="#experience">Experience</a></li>
             <li class='link'><a href="#skills">Skills</a></li>
             <li class='link'><a href='#projects'>Projects</a></li>
             <li class='link'><a href="#connect">Connect</a></li>
-            <li class='link'><a href="#tomessage">Leave Message</a></li>
+            <li class='link'><a href="#tomessage">Leave a Message</a></li>
           </ul>
+        </div> 
+         
         </nav>
-          <h1 class="name">Francine D. McLaurin's Portfolio</h1>
+          
         </div>
       </header>
 
@@ -47,13 +55,14 @@
           <li>USAF Flight-Nurse on fixed wing aircraft</li>
           <li>Operating Room Circulating Nurse</li>
           <li>Home Health Nursing</li>
-          <li>Emergency Department Nursing.</li>
+          <li>Emergency Department Nursing</li>
         </ul>
-        <p>
+        <p id="volunteer">
           Currently volunteering in my faith community as a resource person for
           Health and Wellness. Seeking means of sharing digital
           information in the community for preventive medicine advocacy.
         </p>
+       
       </section>
 
       <section>
@@ -62,7 +71,7 @@
         <p id="coding_experience">
           Currently enrolled in Code The Dream (CTD) program where I am gaining
           real experience in building apps.</p> 
-          <p>CTD offers intense training in
+          <p id="ctd">CTD offers intense training in
           software development, programming basics to advanced web and mobile
           app design.
         </p>
@@ -73,6 +82,7 @@
         <h2>Skills</h2>
         <ul></ul>
       </section>
+      
 
       <section id="projects">
         <h2>Projects</h2>
@@ -86,8 +96,9 @@
             >facebook</a
           >
         </p>
-        <p><a href="mailto:francine_0906@yahoo.com">email me</a></p>
-        <p><a href="https://github.com/francinemclaurin">My github</a></p>
+        <p><a href="mailto:francine_0906@yahoo.com">email me <i class="fa fa-envelope-o icon" aria-hidden="true"></i>
+        </a></p>
+        <p id="git"><a href="https://github.com/francinemclaurin">My github</a></p>
       </section>
 
 <!--Create Message Form-->
@@ -111,7 +122,7 @@
          
          
           
-          <button   type="submit">Submit</button>
+          <button id="sub"  type="submit">Submit</button>
         </form>
       </section>
 
@@ -120,7 +131,7 @@
         <h2>Messages</h2>
         <ul></ul>
       </section>
-
+      <a href="#top">Back to top</a>
       <!--Adding an Empty Footer Element-->
       <footer></footer>
       <!--Specifies relative path to JavaScript File-->
